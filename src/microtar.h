@@ -67,6 +67,7 @@ struct mtar_t {
 
 const char* mtar_strerror(int err);
 
+int mtar_open_fd(mtar_t *tar, void* fd, const char *mode);
 int mtar_open(mtar_t *tar, const char *filename, const char *mode);
 int mtar_close(mtar_t *tar);
 
